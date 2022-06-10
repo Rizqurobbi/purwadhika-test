@@ -24,10 +24,10 @@ const ProductDetail = (props) => {
             return (
                 <div className="row" style={{ alignItems: 'center', paddingTop: "7%" }}>
                     <div style={{ paddingBottom: '3vh', display: 'flex', }}>
-                        <p  className="mx-2 text-decoration-none" style={{ color: 'black' }}>Products</p>
                         <Link href={`/`}>
-                        <p style={{fontWeight:'bolder'}}>/ {productDetail.name}</p>
+                            <p className="mx-2 text-decoration-none" style={{ color: 'black',cursor:'pointer' }}>Products</p>
                         </Link>
+                        <p style={{ fontWeight: 'bolder' }}>/ {productDetail.name}</p>
                     </div>
                     <div className="col-6">
                         <img
