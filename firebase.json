@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site":"purwadhika-jobtest",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

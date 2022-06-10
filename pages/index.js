@@ -8,9 +8,9 @@ import Swal from 'sweetalert2';
 const Homepage = (props) => {
   const [products, setProducts] = useState([])
   const [name, setName] = useState("")
-  const [weight, setWeight] = useState(null)
-  const [price, setPrice] = useState(null)
-  const [qty, setQty] = useState(null)
+  const [weight, setWeight] = useState("")
+  const [price, setPrice] = useState("")
+  const [qty, setQty] = useState("")
   const [benefits, setBenefits] = useState("")
   const [images, setImages] = useState("")
   const databaseRef = collection(database, "products")
