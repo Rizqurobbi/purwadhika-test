@@ -76,9 +76,9 @@ const Homepage = (props) => {
     }
   }
   const printProduct = () => {
-    return products.map((data) => {
+    return products.map((data,index) => {
       return (
-        <div className="col-4">
+        <div key={index} className="col-4">
           <Link href={`/product-detail?id=${data.id}`}>
             <Card className="mb-3 shadow bg-white rounded" style={{ height: '370px', border: "none" }}>
               <CardImg

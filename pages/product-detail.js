@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { doc, getDoc } from "firebase/firestore";
 import { database } from "../firebase/firebase-config"
+import Link from 'next/link';
 const ProductDetail = (props) => {
     const [productDetail, setProductDetail] = useState({})
     useEffect(() => {
@@ -23,8 +24,10 @@ const ProductDetail = (props) => {
             return (
                 <div className="row" style={{ alignItems: 'center', paddingTop: "7%" }}>
                     <div style={{ paddingBottom: '3vh', display: 'flex', }}>
-                        <a href="/" className="mx-2 text-decoration-none" style={{ color: 'black' }}>Products</a>
+                        <p  className="mx-2 text-decoration-none" style={{ color: 'black' }}>Products</p>
+                        <Link href={`/`}>
                         <p style={{fontWeight:'bolder'}}>/ {productDetail.name}</p>
+                        </Link>
                     </div>
                     <div className="col-6">
                         <img
